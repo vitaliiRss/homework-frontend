@@ -14,7 +14,7 @@ export type UserType = {
 };
 
 export type UsersObjectType = {
-  myFriends: Array<UserType>; // пропиши типизацию
+  myFriends: UserType[]; // пропиши типизацию
 };
 
 export const HW2 = () => {
@@ -30,7 +30,7 @@ export const HW2 = () => {
   // ❗ Массив с данными не трогаем!
 
   const users = {
-    myFriends:[
+    myFriends: [
       { id: 1, name: 'John', age: 25, address: { street: '123 Main St', city: 'New York' } },
       { id: 2, name: 'Alice', age: 30, address: { street: '456 Elm St', city: 'San Francisco' } },
       { id: 3, name: 'Bob', age: 35, address: { street: '789 Oak St', city: 'Seattle' } },
